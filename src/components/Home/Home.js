@@ -161,7 +161,8 @@ function Home(props) {
               alt={runtimeConfig.AVATAR_ALT}
             />
             <h1>{`${runtimeConfig.NAME}`}</h1>
-            <p>{runtimeConfig.BIO}</p>
+            <p><div dangerouslySetInnerHTML={runtimeConfig.BIO}
+            /></p>
             <Sort>
               {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
               {runtimeConfig.YOUTUBE && (
